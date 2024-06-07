@@ -21,6 +21,6 @@ Run:
 
 Result:
 
-![](/images/dirtycow.png)
+![](/images/privesc/dirtycow.png)
 
 Root user password: ```PoorLittleCow```

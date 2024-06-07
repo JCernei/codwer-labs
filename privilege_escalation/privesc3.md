@@ -1,5 +1,5 @@
 ## User1
-![](/images/user1.png)
+![](/images/privesc/user1.png)
 
 Investigating ```/usr/bin/gdb``` capabilities reveals ```cap_dac_read_search=ep```.
 
@@ -12,7 +12,7 @@ python print(open("/root/user2.txt").read())
 Password for user 2: WolfMountedFastnessNappy
 
 ## User2
-![](/images/user2.png)
+![](/images/privesc/user2.png)
 
 Investigating ```/usr/bin/vim.basic``` capabilities reveals 
 ```cap_dac_override=ep```.
@@ -24,7 +24,7 @@ vim /root/user3.txt
 Password for user 3: PebblyClaritySuperiorMournful
 
 ## User3
-![](/images/user3.png)
+![](/images/privesc/user3.png)
 
 Investigating ```/usr/bin/python3.11``` capabilities reveals ```cap_fowner=ep```.
 
@@ -39,7 +39,7 @@ Then run ```/bin/bash``` and acces the needed file as root.
 Password for user 4: JustifierDetachedCuppedEndurable
 
 ## User4
-![](/images/user4.png)
+![](/images/privesc/user4.png)
 
 Investigating ```/usr/bin/php8.2``` capabilities reveals ```cap_setuid=ep```.
 
@@ -55,7 +55,7 @@ CMD="/bin/sh"
 Password for user 5: VentureRangedConveneVirus
 
 ## User5
-![](/images/user5.png)
+![](/images/privesc/user5.png)
 
 Investigating with ```./pspy``` reveals that there is a cronjob that archives all the data from ```/home/user5```. The exploitation is possible due to the checkpoint functionality within the tar utility.
 
@@ -75,7 +75,7 @@ When the cronjob is executed, the wildcard is expanded to files in ```/home/user
 Password for user 6: RearViewUnscathedSantaRamble
 
 ## User6
-![](/images/user6.png)
+![](/images/privesc/user6.png)
 
 ```sudo -l``` informs us that we can run ```/usr/bin/python3``` and ```/root/*.py``` as ```(root) NOPASSWD```.
 
